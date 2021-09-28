@@ -1,0 +1,146 @@
+:root {
+    --background-dark: #ad6ed1c0;
+    --black: #000;
+    --red-color: #b12816;
+    --radius: 20px;
+  }
+  
+  html {
+    background-color: var(--background-dark);
+    color: var(--black);
+    height: 100%;
+  }
+  
+  * {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .header {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .bDay-image {
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+  
+  .container {
+    width: 300px;
+    margin: auto auto;
+  }
+  
+  label,
+  input {
+    display: block;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+  
+  label {
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  
+  input {
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: transparent;
+    font-size: large;
+    margin: 1rem 0;
+  }
+  
+  #calculate-number {
+    margin: 0.5rem auto;
+    display: block;
+  }
+  
+  #calculate-number {
+    background-color: var(--background-dark);
+    border: 2px solid var(--black);
+    color: var(--black);
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+    outline: var(--black);
+    margin: auto;
+    display: block;
+  }
+  
+  #output-container {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: x-large;
+    border-color: var(--black);
+    border-width: medium;
+    border-radius: 5px;
+  }
+
+  .notice {
+    width: 100%;
+    
+    
+}
+.notice .message {
+    border: 2px solid var(--red-color);
+    border-radius: var(--radius);
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    width:25%;
+}
+
+.notice .close {
+    font-weight: 900;
+    cursor: pointer;
+    float: right;
+    width: 30px;
+    height: 30px;
+
+}
+  
+  /* footer */
+  
+  
+  .list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 1rem;
+}
+
+
+.footer {
+  background-color: black;
+  padding:2rem 0rem;
+  text-align: center;
+  color:white;
+  border-top-right-radius: 1rem;
+}
+
+.footer .link {
+  color: white;
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+  color:rgb(228, 155, 228);
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+  
+  
