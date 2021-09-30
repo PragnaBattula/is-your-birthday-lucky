@@ -1,7 +1,7 @@
 :root {
-    --background-dark: #ad6ed1c0;
+    --background-dark: #87aae2;
     --black: #000;
-    --red-color: #b12816;
+    --red-color: #921606;
     --radius: 20px;
   }
   
@@ -25,6 +25,7 @@
     margin: auto;
     margin-bottom: 2rem;
     text-align: center;
+  
 }
   
   .container {
@@ -68,6 +69,10 @@
     outline: var(--black);
     margin: auto;
     display: block;
+
+  }
+  #calculate-number:hover{
+    background-color: #d8b65a;
   }
   
   #output-container {
@@ -84,17 +89,21 @@
   }
 
   .notice {
-    width: 100%;
-    
-    
+    width: 100%; 
 }
+
+.notice :hover{
+  background-color: #e2d187;
+}
+
 .notice .message {
     border: 2px solid var(--red-color);
     border-radius: var(--radius);
     margin: 20px auto;
     padding: 20px;
     text-align: center;
-    width:75%;
+    width:40%;
+    border-style: dashed;
 }
 
 .notice .close {
@@ -107,39 +116,11 @@
 }
   
   /* footer */
-  
-  
-  .list-non-bullet {
-    list-style: none;
-    padding-inline-start: 0px;
-}
 
-.list-item-inline {
-    display: inline;
-    padding: 0rem 1rem;
-}
-
-
-.footer {
-  background-color: black;
-  padding:2rem 0rem;
-  text-align: center;
-  color:white;
-  border-top-right-radius: 1rem;
-}
-
-.footer .link {
-  color: white;
-}
-
-.footer .footer-header {
-  font-weight: bold;
-  font-size: large;
-  color:rgb(228, 155, 228);
-}
-
-.footer ul {
-  padding-inline-start: 0px;
+.footer{
+  text-align:center;
+padding-top: 1rem;
+padding-bottom: 1rem;
 }
 
   
