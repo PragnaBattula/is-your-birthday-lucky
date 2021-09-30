@@ -9,34 +9,31 @@ crossBtn.addEventListener("click", () => {
     msg.style.display = "none";
 });
 
-const calculateSum = (date) => {
+function calculator(date, num) {
   let sum = 0;
-  date = date.replaceAll("-", "");
-  for (let digit of date) {
-    sum = sum + Number(digit);
+  if (date === "" || num === "") {
+          msg.style.display = "block";
+          msg.innerHTML = "Fields can't be empty!!!";
+  } else {
+      for (let i = 0; i < date.length; i++) {
+          if (Number.isInteger(parseInt(date[i]))) {
+              sum += parseInt(date[i]);
+          }
+      }
+      if (sum % num === 0) {
+          msg.innerHTML = "Hurray!!You are a lucky person! 🥳";
+          msg.style.display = "block";
+      } else {
+          msg.innerHTML = "Oops!!Your birthday is not lucky 😕";
+          msg.style.display = "block";
+      }
   }
-  return sum;
-};
-
-const checkIsNumberLucky = (sumOfDate, numberToCheck) => {
-  console.log(sumOfDate, numberToCheck);
-  if (sumOfDate % numberToCheck === 0) {
-    return showMessage(`${numberToCheck} is a lucky number!! 🥳 🥳  `);
-  }
-  showMessage(`${numberToCheck} is not that lucky 😕`);
-};
+}
 
 const showMessage = (message) => {
   displayMessage.innerText = message;
 };
 
-checkButton.addEventListener("click", () => {
-  const date = dateOfBirth.value;
-  const numberToCheck = luckyNumber.value;
-  if (date && numberToCheck) {
-    const sumOfDate = calculateSum(date);
-    checkIsNumberLucky(sumOfDate, numberToCheck);
-  } else {
-    showMessage("Please enter both the fields");
-  }
+checkButton.addEventListener("click", (e) => {
+  calculator(dateOfBirth.value, luckyNumber.value);
 });
